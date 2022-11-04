@@ -1,0 +1,58 @@
+#about-area {
+  .about_numbers {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .child_about {
+      flex-basis: 48%;
+      background-color: $bgColor;
+      text-align: center;
+      padding: 40px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      h5 {
+        font : {
+          size: 45px;
+          weight: $fontWXL;
+        }
+        color: $bKColor;
+        margin: 0;
+      }
+      h6 {
+        font : {
+          size: 15px;
+          weight: $fontWMD;
+        }
+        margin: 0;
+        color: $bKColor;
+      }
+    }
+  }
+  .about_info {
+    flex-basis: 46%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  h6 {
+    font : {
+      size: 20px;
+      weight: $fontWMD;
+    }
+    line-height: 1em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: $bKColor;
+  }
+  h3 {
+    font : {
+      size: 30px;
+      weight: $fontWXL;
+    }
+    color: $bKColor;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+}

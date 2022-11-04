@@ -1,0 +1,151 @@
+// color
+$primaryColor: #eb7966;
+$secondaryColor: #f4c9c2;
+$bgColor: #f9ebea;
+$whiteColor: #fff;
+$bKColor: #111b4f;
+
+// Font weight
+$fontWSM: 400;
+$fontWMD: 500;
+$fontWXL: 700;
+
+body,
+p {
+  font: {
+    size: 16px;
+    weight: $fontWSM;
+  }
+}
+p {
+  margin: 0 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $fontWXL;
+  margin: 0 0 15px;
+  line-height: 1.2em;
+}
+ul {
+  list-style: none;
+}
+
+//main-width
+$Small: 200px;
+$medium: 767px;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  @media only screen and (min-width: $Small) and (max-width: $medium) {
+    width: 95%;
+  }
+}
+
+//paddings
+$paddingSM: 10px 0px;
+.paddingXL {
+  padding: 50px 0px;
+  @media only screen and (min-width: $Small) and (max-width: $medium) {
+    padding: 20px 0px;
+  }
+}
+
+//Margin-top
+.m-top {
+  margin-top: 45px;
+  @media only screen and (min-width: $Small) and (max-width: $medium) {
+    margin-top: 15px;
+  }
+}
+
+// social media
+.socail_area {
+  ul {
+    text-align: right;
+    li {
+      margin-left: 15px;
+      a {
+        background-color: $secondaryColor;
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        color: $bKColor;
+        border-radius: 30px;
+        i {
+          margin: 0;
+        }
+        &:hover {
+          background-color: $bKColor;
+          color: $secondaryColor;
+        }
+      }
+      i.fa-solid {
+        background-color: $secondaryColor;
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        color: $bKColor;
+        transition: 0.3s;
+        border-radius: 30px;
+        i {
+          margin: 0;
+        }
+        &:hover {
+          background-color: $bKColor;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
+
+//call action button
+.btn-cta {
+  background-color: $primaryColor;
+  color: $whiteColor;
+  padding: 12px 20px;
+  display: inline-block;
+  font-weight: $fontWMD;
+  border-radius: 5px;
+  margin-top: 5px;
+  &:hover {
+    background-color: $bKColor;
+  }
+}
+
+//Section Title
+.title {
+  font : {
+    size: 60px;
+    weight: $fontWXL;
+  }
+  line-height: 1em;
+  margin-bottom: 10px;
+  @media only screen and (min-width: $Small) and (max-width: $medium) {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+}
+
+//Section Sub Title
+.sub_title {
+  font : {
+    size: 25px;
+    weight: $fontWMD;
+  }
+  line-height: 1em;
+  margin-bottom: 0;
+  @media only screen and (min-width: $Small) and (max-width: $medium) {
+    font-size: 15px;
+  }
+}

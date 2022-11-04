@@ -1,0 +1,179 @@
+@media only screen and (min-width: $Small) and (max-width: $medium) {
+  // Header area style
+  #header_area {
+    .inner {
+      display: block;
+    }
+    //Top_Header_area_style
+    .top_header_area {
+      .address,
+      .phone_number,
+      .email_address {
+        display: none;
+      }
+
+      .socail_area {
+        ul {
+          text-align: center;
+        }
+      }
+      .mobile_bars {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        i {
+          color: $whiteColor;
+          font-size: 22px;
+        }
+      }
+    }
+    // main header style
+    .main_header {
+      .logo_area {
+        width: 200px;
+        margin: 0 auto;
+        h2 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  // Hero area style
+  #hero_area {
+    .inner {
+      flex-direction: column;
+    }
+    .admin_info {
+      flex-basis: 100%;
+      order: 2;
+      padding: 20px;
+      h2 {
+        font-size: 40px;
+      }
+    }
+    .admin_image {
+      flex-basis: 100%;
+      order: 1;
+      padding: 0 15px 15px 15px;
+    }
+  }
+
+  //About area style
+  #about-area {
+    .inner {
+      flex-direction: column;
+      .about_numbers {
+        flex-basis: 100%;
+        order: 2;
+        padding: 15px;
+        .child_about {
+          h5 {
+            font-size: 25px;
+          }
+          h6 {
+            font-size: 15px;
+          }
+        }
+      }
+      .about_info {
+        flex-basis: 100%;
+        order: 1;
+        padding: 15px;
+        h6 {
+          font-size: 15px;
+        }
+        h3 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  //Service Area Style
+  #service_area {
+    .inner {
+      flex-direction: column;
+      gap: 20px;
+      padding: 15px;
+      .child_service {
+        padding: 25px;
+        i {
+          font-size: 35px;
+          margin-bottom: 10px;
+        }
+        h4 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  //Project Area Style
+  #project_area {
+    .inner_grid {
+      display: block;
+    }
+    .child_project {
+      margin-bottom: 10px;
+    }
+  }
+
+  //Blog Area Style
+  #blog_area {
+    .inner {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  //Contact Area Style
+  #contact_area {
+    .inner,
+    .contact_info {
+      flex-direction: column;
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      iframe {
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      .contact_form {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 96%;
+  }
+  #hero_area .admin_info h2 {
+    font-size: 55px;
+  }
+  #service_area .child_service {
+    padding: 21px;
+  }
+  #project_area {
+    .project_x {
+      grid-column: auto / span 1;
+    }
+    .project_y {
+      grid-row: auto / span 1;
+    }
+    .project_xy {
+      grid-column: auto / span 1;
+      grid-row: auto / span 1;
+    }
+  }
+  #contact_area .contact_info div {
+    padding: 11px;
+    display: flex;
+  }
+}

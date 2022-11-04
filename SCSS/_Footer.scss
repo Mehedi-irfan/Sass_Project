@@ -1,0 +1,48 @@
+#footer_area {
+  background-color: $bKColor;
+  position: relative;
+  .top {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    i {
+      width: 40px;
+      height: 40px;
+      background-color: $primaryColor;
+      color: $whiteColor;
+      line-height: 40px;
+      border-radius: 50%;
+      transition: 0.3s ease-in;
+      &:hover {
+        background-color: $whiteColor;
+        color: $primaryColor;
+      }
+    }
+  }
+  .logo_area {
+    width: 250px;
+    margin: 0 auto 20px;
+    a {
+      margin: 0;
+    }
+    h2 {
+      font-size: 35px;
+      margin: 0;
+      color: $primaryColor;
+      &::first-letter {
+        font-size: 40px;
+        font-family: cursive;
+      }
+    }
+  }
+  .socail_area ul {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .copyright {
+    color: $whiteColor;
+    p {
+      font-size: 14px;
+    }
+  }
+}

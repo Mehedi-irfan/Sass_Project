@@ -1,0 +1,96 @@
+#header_area {
+  //Top_Header_area_style
+  .top_header_area {
+    background-color: $primaryColor;
+    padding: $paddingSM;
+    position: relative;
+    .mobile_bars {
+      display: none;
+      cursor: pointer;
+    }
+    p {
+      font : {
+        size: 14px;
+        weight: $fontWMD;
+      }
+      color: $whiteColor;
+      margin: 4px 0 0;
+      i {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+  //Main_header_style
+  .main_header {
+    background-color: $whiteColor;
+    padding: 20px 0px;
+    .logo_area {
+      flex-basis: 30%;
+      a {
+        margin: 0;
+      }
+      h2 {
+        font-size: 35px;
+        margin: 0;
+        color: $primaryColor;
+        &::first-letter {
+          font-size: 40px;
+          font-family: cursive;
+        }
+      }
+    }
+    .main_menu {
+      flex-basis: 70%;
+      ul {
+        text-align: right;
+        display: flex;
+        justify-content: end;
+        li {
+          margin-left: 25px;
+          a {
+            color: $bKColor;
+            font : {
+              size: 15px;
+              weight: $fontWMD;
+            }
+            &:hover {
+              color: $primaryColor;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (min-width: $Small) and (max-width: $medium) {
+      .main_menu {
+        background-color: $primaryColor;
+        position: absolute;
+        width: 95%;
+        left: -9999999px;
+        ul {
+          flex-direction: column;
+          text-align: left;
+          li {
+            margin-left: 0;
+            margin-bottom: 5px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            a {
+              color: $whiteColor;
+              display: block;
+              padding: 8px 20px;
+              &:hover {
+                background-color: $bKColor;
+                color: $whiteColor;
+              }
+            }
+          }
+        }
+        &.open {
+          left: 10px;
+        }
+      }
+    }
+  }
+}
